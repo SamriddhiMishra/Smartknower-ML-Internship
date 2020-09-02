@@ -4,7 +4,6 @@ st.subheader("This is a Review Classifier. Try it Out!")
 
 import pandas as pd
 import numpy as np
-import matplotlib.pyplot as plt
 
 ## Import Dataset
 
@@ -50,7 +49,7 @@ user_input = st.text_area("\n", "")
 print()
 
 # Wordcloud
-
+import matplotlib.pyplot as plt
 from PIL import Image
 from wordcloud import WordCloud, STOPWORDS, ImageColorGenerator
 
