@@ -45,7 +45,7 @@ counts = np.bincount(y_train)
 v = np.argmax(counts)
 st.subheader("Your Review :  ")
 
-user_input = st.text_area("\n", "This is my default review!!!")
+user_input = st.text_area("\n", "")
 print()
  
 y_pred = text_model.predict([user_input])
