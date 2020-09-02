@@ -87,7 +87,6 @@ plt.tight_layout(pad = 0)
 axes.imshow(wc.recolor(color_func=image_colors), interpolation="bilinear")
 #axes.imshow(alice_coloring, cmap=plt.cm.gray, interpolation="bilinear")
 
-
 if(user_input != ""):
  st.pyplot()
 
