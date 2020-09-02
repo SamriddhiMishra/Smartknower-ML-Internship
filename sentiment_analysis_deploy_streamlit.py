@@ -47,45 +47,6 @@ st.subheader("Your Review :  ")
 
 user_input = st.text_area("\n", "")
 print()
-'''
-# Wordcloud
-import matplotlib.pyplot as plt
-from PIL import Image
-from wordcloud import WordCloud, STOPWORDS, ImageColorGenerator
-
-comment_words = '' 
-stopwords = set(STOPWORDS) 
-  
-# iterate through the csv file 
-for val in df['Text']:
-  val = str(val) 
-  tokens = val.split() 
-
-  for i in range(len(tokens)): 
-    tokens[i] = tokens[i].lower()     
-  comment_words += " ".join(tokens)+" "
-
-alice_coloring = np.array(Image.open("img.png"))
-
-wc = WordCloud( background_color="white",mask=alice_coloring,width = 600, height = 600,
-               stopwords=stopwords, max_font_size=30)
-# generate word cloud
-wc.generate(comment_words)
-
-# create coloring from image
-image_colors = ImageColorGenerator(alice_coloring)
-print(alice_coloring.shape)
-# show
-fig, axes = plt.subplots(figsize=(6,6))
-# recolor wordcloud and show
-# we could also give color_func=image_colors directly in the constructor
-
-axes.axis("off") 
-plt.tight_layout(pad = 0) 
-#axes.imshow(wc, interpolation="bilinear")
-axes.imshow(wc.recolor(color_func=image_colors), interpolation="bilinear")
-#axes.imshow(alice_coloring, cmap=plt.cm.gray, interpolation="bilinear")
-'''
 
 y_pred = text_model.predict([user_input])
 if(y_pred == 2):
@@ -94,8 +55,4 @@ elif (y_pred == 1):
   st.write('Negative Review')
 else:
   st.write('Negative Review')
-print()  
-'''
-if(user_input != ""):
- st.pyplot()
- '''
+print()
