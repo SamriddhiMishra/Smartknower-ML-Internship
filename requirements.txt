@@ -2,3 +2,5 @@ numpy
 pandas
 streamlit
 sklearn
+wordcloud
+PIL
