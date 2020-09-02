@@ -57,9 +57,3 @@ elif (y_pred == 1):
   st.write('Negative - Neutral Review')
 else:
   st.write('Negative Review')
-
-from pyngrok import ngrok
-ngrok.connect(port='8501')
-
-!streamlit run app.py
-
