@@ -4,3 +4,4 @@ streamlit
 sklearn
 wordcloud
 pillow
+matplotlib
