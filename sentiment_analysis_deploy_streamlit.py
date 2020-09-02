@@ -52,6 +52,6 @@ y_pred = text_model.predict([user_input])
 if(y_pred == 2):
   st.write('Positive Review')
 elif (y_pred == 1):
-  st.write('Negative - Neutral Review')
+  st.write('Negative Review')
 else:
   st.write('Negative Review')
