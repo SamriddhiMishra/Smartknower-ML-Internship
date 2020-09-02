@@ -3,4 +3,4 @@ pandas
 streamlit
 sklearn
 wordcloud
-pillow
+Pillow
