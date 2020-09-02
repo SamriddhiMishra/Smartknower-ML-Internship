@@ -47,7 +47,7 @@ st.subheader("Your Review :  ")
 
 user_input = st.text_area("\n", "")
 print()
-
+'''
 # Wordcloud
 import matplotlib.pyplot as plt
 from PIL import Image
@@ -85,7 +85,7 @@ plt.tight_layout(pad = 0)
 #axes.imshow(wc, interpolation="bilinear")
 axes.imshow(wc.recolor(color_func=image_colors), interpolation="bilinear")
 #axes.imshow(alice_coloring, cmap=plt.cm.gray, interpolation="bilinear")
-
+'''
 
 y_pred = text_model.predict([user_input])
 if(y_pred == 2):
@@ -95,5 +95,7 @@ elif (y_pred == 1):
 else:
   st.write('Negative Review')
 print()  
+'''
 if(user_input != ""):
  st.pyplot()
+ '''
