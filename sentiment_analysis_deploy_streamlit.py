@@ -36,7 +36,6 @@ X_train,X_test,y_train,y_test = train_test_split(X,y,test_size=0.2,random_state=
 from sklearn.pipeline import Pipeline
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.naive_bayes import MultinomialNB
-from wordcloud import WordCloud, STOPWORDS
 
 text_model = Pipeline([('tfidf',TfidfVectorizer(binary = False,max_df=0.611111111111111,norm = 'l2')),('model',MultinomialNB(alpha = 0.058,fit_prior=True))])
 
