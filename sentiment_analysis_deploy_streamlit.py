@@ -2,6 +2,16 @@ import streamlit as st
 st.title("Machine Learning Model")
 st.subheader("This is a Review Classifier. Try it Out!")
 
+def local_css(file_name):
+    with open(file_name) as f:
+        st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
+
+def remote_css(url):
+    st.markdown(f'<link href="/content/drive/My Drive/Smartknower ML Intern/Major Project/style.css" rel="stylesheet">', unsafe_allow_html=True)    
+
+local_css("/content/drive/My Drive/Smartknower ML Intern/Major Project/style.css")
+remote_css('https://fonts.googleapis.com/icon?family=Material+Icons')
+
 import pandas as pd
 import numpy as np
 
