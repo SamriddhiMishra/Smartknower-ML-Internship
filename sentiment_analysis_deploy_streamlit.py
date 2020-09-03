@@ -7,9 +7,9 @@ def local_css(file_name):
         st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
 
 def remote_css(url):
-    st.markdown(f'<link href="/content/drive/My Drive/Smartknower ML Intern/Major Project/style.css" rel="stylesheet">', unsafe_allow_html=True)    
+    st.markdown(f'<link href="style.css" rel="stylesheet">', unsafe_allow_html=True)    
 
-local_css("/content/drive/My Drive/Smartknower ML Intern/Major Project/style.css")
+local_css("style.css")
 remote_css('https://fonts.googleapis.com/icon?family=Material+Icons')
 
 import pandas as pd
