@@ -1,3 +1,3 @@
 # Sentiment Analysis on Reviews deployed using Streamlit
-Analysis sentiments of the user instantly into positive or egative categories. Deployment on Heroku Cloud
+Real-time analysis of user's sentiments and categorization into positive or negative category. Deployment on Heroku Cloud
 Checkout the link - https://sentiment-analysis-reviews.herokuapp.com/
